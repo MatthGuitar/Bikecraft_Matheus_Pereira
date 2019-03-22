@@ -1,0 +1,430 @@
+/*Estilo Geral*/
+
+.body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    line-height: 20px;
+}
+li{
+    list-style: none;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+.subtitle {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: .1em;
+    color: #000;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.subtitle::after{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #000000;
+    margin: 8px auto 10px auto;
+}
+
+.btn{
+    border: 3px solid #fec63e;
+    padding: 10px 30px;
+    color: #fec63e;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all .5s ease; 
+}
+.btn:hover {
+    color: #ffffff;
+    border: 3px solid #ffffff;
+}
+.btn-preto{
+    border: 3px solid #fec63e;
+    padding: 10px 30px;
+    color: #fec63e;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all .5s ease; 
+}
+.btn-preto:hover {
+    color: #000000;
+    border: 3px solid #000;
+}
+.formphp label.nao-aparece, .formphp input.nao-aparece {
+	display: none !important;
+}
+
+#form-erro span, #form-send span  {
+	font-size: 18px;
+	line-height: 25px;
+	margin-bottom: 10px;
+	display: block;
+}
+
+#form-send {
+	color: #31aa39;
+}
+
+#form-erro {
+	color: #f64540;
+}
+/*Header*/
+.header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #fec63e;
+    padding: 15px 0;
+    z-index: 10;
+}
+.header_menu{
+    text-align: right;
+    margin-top: 20px;
+}
+.logo{
+    margin-left: -10px;
+}
+
+.link_nav{
+    margin-left: 10px;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: .1em;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all .3s ease;
+}
+.link_nav:hover{
+    color: #ffffff;
+}
+/*Introdução*/
+
+.intro{
+    width: 100%;
+    height: 380px;
+    background: url(../img/bg.jpg);
+    background-size: cover;
+    margin-top: 90px;
+    text-align: center;
+    padding-top: 60px;
+}
+.intro h1 {
+    font-size: 48px;
+    line-height: 48px;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.quote_externo {
+    color: #ffffff;
+    max-width: 320px;
+    margin: 0 auto; 
+    margin-bottom: 40px; 
+}
+.quote_externo p {
+    font-style: italic;
+}
+.quote_externo p:before, .quote_externo p::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 14px auto 10px auto;
+}
+.quote_externo cite {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: .1em;
+}
+/*Produtos*/
+
+.produtos{
+    padding: 60px 0;
+    text-align: center;
+}
+.produtos_lista li{
+    background-color: #fec63e;
+}
+.produtos_lista li img{
+    margin: 0 auto;
+
+}
+.produtos_icone{
+    background: #000;
+    text-align: center; 
+}
+.produtos_lista{
+    margin-top: 15px;
+}
+.produtos_lista li h3{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    margin-top: 10px;
+}
+.produtos_lista h3:after{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #000000;
+    margin: 0 auto;
+}
+.produtos_texto{
+    padding: 10px 20px 20px 20px;
+}
+.call{
+    clear: both;
+    padding-top: 20px;
+    text-align: center;
+}
+.call p{
+    margin-bottom: 20px;
+}
+/*Protfólio*/
+.portfolio{
+    width: 100%;
+    background: #000;
+    padding: 40px 0;
+}
+.portfolio p{
+    color: #ffffff;
+}
+.portfolio h2{
+    color: #fec63e;
+}
+.portfolio h2::after{
+    content: "";
+    display: block;
+    background-color: #fec63e;
+    margin: 0 auto;
+}
+.portfolio div:last-of-type{
+    margin-top: 20px;
+}
+/*Qualidades*/
+.qualidades{
+    padding: 60px 0;
+}
+.qualidades::after{
+    content: "";
+    width: 634px;
+    height: 83px;
+    display: block;
+    background: url("../img/linhas.png") no-repeat center;
+    position: absolute;
+    top: 209px;
+    right: 162px;
+    z-index: -1;
+}
+.qualidades img{
+    margin: 0 auto;
+}
+.qualidades li{
+    text-align: center;
+    padding: 0 40px;
+}
+.qualidade_lista{
+    padding-top: 20px;
+}
+.qualidade_lista li h3{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    margin-top: 10px;
+}
+.qualidade_lista h3::after{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #000000;
+    margin: 6px auto;
+}
+/*Footer*/
+.quebra{
+    width: 100%;
+    height: 220px;
+    background: url("../img/bg-footer.jpg") no-repeat center;
+    text-align: center;
+    background-size: cover;
+    padding-top: 40px;
+}
+.quebra .quote_externo{
+    max-width: 400px;
+}
+.subtitle-footer {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: .1em;
+    color: #fec63e;
+    text-transform: uppercase;
+    text-align: left;
+    margin-bottom: 15px;
+    padding-top: 20px;
+}
+.subtitle-footer::after{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #fec63e;
+    margin: 6px 20px 10px 0;
+}
+.footer{
+    height: 230px;
+    background: #000;
+}
+.footer p{
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 20px;
+    
+}
+.footer-info{
+    margin-bottom: 20px;
+}
+.rede-icone{
+    display: inline-block;
+    margin: 10px;
+    border: #fec63e;
+    border-style: solid;
+    border-width: 3px;
+    padding: 6px;
+}
+.direitos{
+    background: #fec63e;
+    width: 100%;
+    height: 70px;
+    padding: 20px;
+}
+.direitos p{
+    color: #000;
+    margin-left: 210px;
+}
+/*Plugin Slide*/
+
+.rslides, .rslides_portfolio {
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    }
+  
+  .rslides li, .rslides_portfolio li {
+    -webkit-backface-visibility: hidden;
+    position: absolute;
+    display: none;
+    width: 100%;
+    left: 0;
+    top: 0;
+    }
+  
+  .rslides li:first-child, .rslides_portfolio li:first-child {
+    position: relative;
+    display: block;
+    float: left;
+    }
+  
+  .rslides img, .rslides_portfolio img {
+    display: block;
+    height: auto;
+    width: 100%;
+    border: 0;
+    }
+.rslides_tabs{
+    text-align: center;
+    margin-top: 13px;
+
+}
+.rslides_tabs li{
+    display: inline;
+    margin: 0 5px; 
+}
+.rslides_tabs li a{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: #1d1d1d;
+    color: #1d1d1d;
+    border-radius: 25px;
+    overflow: hidden;
+    text-indent: -200px;    
+}
+.rslides_tabs li.rslides_here a,.rslides_tabs li a:hover{
+    background: #fec63e;
+    color: #fec63e;
+
+}
+/*Animação*/
+
+.js .introducao h1, .js .introducao blockquote, .js .introducao .btn, .js .animar, .js .animar-interno, .js .introducao-interna h1, .js .introducao-interna p {
+	opacity: 0;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -20px, 0);
+            transform: translate3d(0, -20px, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -20px, 0);
+            transform: translate3d(0, -20px, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+          animation-name: fadeInDown;
+}
